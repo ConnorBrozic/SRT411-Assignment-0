@@ -3,7 +3,7 @@ title: "SRT411A0"
 author: "Connor Brozic"
 date: "February 1, 2017"
 output:
-  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -17,6 +17,7 @@ Github Username: ConnorBrozic
 
 This assigment focuses on completing the 15 "ToDos" from within the "A (very) short introduction to R"", written by Paul Torfs and Claudia Brauer.  It focuses on the basics of the R languages, to showcase how powerful even a basic part of R is.  
 This document can be found at:  https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf
+
 I have used help sources in some cases, which i have outlined at the bottom of this document.  
 
 #### ToDo Question 1
@@ -160,9 +161,9 @@ for(i in ToDo13)
   {
   if (i < 5)
   {
-    ToDo13a[i]= ToDo13[i] * 5
+    ToDo13a[i]= ToDo13[i] * 10
   }else if (i > 90){
-    ToDo13a[i]= ToDo13[i] * 5
+    ToDo13a[i]= ToDo13[i] * 10
   }else{
     ToDo13a[i] = ToDo13[i] * 0.1
   }
@@ -185,10 +186,10 @@ ToDo14Function <- function(arg1)
     {
     if (arg1[i] < 5)
       {
-      arg1[i]= arg1[i] * 5
+      arg1[i]= arg1[i] * 10
       }
     else if (arg1[i] > 90){
-      arg1[i]= arg1[i] * 5
+      arg1[i]= arg1[i] * 10
     }else{
       arg1[i] = arg1[i] * 0.1
     }
@@ -204,9 +205,9 @@ The ToDo above can be done more easily
 and quickly without a for-loop but with regular vector-computations.
 ```{r}
 ToDo15 <- c(1:100)
-Result1 <- ToDo15[ToDo15<5] * 5
+Result1 <- ToDo15[ToDo15<5] * 10
 Result2 <- ToDo15[ToDo15>=5 & ToDo15<=90] * 0.1
-Result3 <- ToDo15[ToDo15>90] * 5
+Result3 <- ToDo15[ToDo15>90] * 10
 ToDo15 <- c(Result1,Result2,Result3)
 ToDo15
 
