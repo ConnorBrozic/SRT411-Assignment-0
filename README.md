@@ -5,4 +5,4 @@ By: Connor Brozic
 
 Please view the .md file for the properly formatted report.  It is a Github Markdown document.
 
-There is also the formatted document in PDF format as well.  
+There is also the formatted document in PDF format as well as the source code in .Rmd format.  
