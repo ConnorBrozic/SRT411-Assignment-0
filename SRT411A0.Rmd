@@ -3,7 +3,7 @@ title: "SRT411A0"
 author: "Connor Brozic"
 date: "February 1, 2017"
 output:
-  pdf_document: default
+  github_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -71,8 +71,11 @@ Make a file called firstscript.R containing Rcode
 that generates 100 random numbers and
 plots them.
 ```{r}
-ToDo6 <- rnorm(100)
-plot(ToDo6)
+source("firstscript.R")
+
+#Code within the firstscript.R file.
+#ToDo6 <- rnorm(100)
+#plot(ToDo6)
 ```
 
 #### ToDo Question 7
